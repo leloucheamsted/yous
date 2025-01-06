@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>491835243808-0vtd2k2rsqja3hg859psqmt6u8623gij.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491835243808-0vtd2k2rsqja3hg859psqmt6u8623gij</string>
+	<key>API_KEY</key>
+	<string>AIzaSyALMIMgnN3NjZupirfwy6K69jsdOKDStik</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491835243808</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.youscribe.youscribe.app</string>
+	<key>PROJECT_ID</key>
+	<string>youscribe-30b20</string>
+	<key>STORAGE_BUCKET</key>
+	<string>youscribe-30b20.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491835243808:ios:114948478467d46b77ab45</string>
+	<key>DATABASE_URL</key>
+	<string>https://youscribe-30b20.firebaseio.com</string>
+</dict>
+</plist>

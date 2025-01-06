@@ -1,0 +1,48 @@
+version: 3
+
+vars:
+  RED: '\033[0;31m'
+  GREEN: '\033[0;32m'
+  COLOROFF: '\033[0m'
+  PREFIX: "⏳"
+
+silent: true
+
+tasks:
+  clean:
+    desc: Cleans the environment.
+    internal: true
+    cmds:
+      - $FVM_PREFIX flutter clean
+
+  get:
+    desc: Getting latest dependencies.
+    internal: true
+    cmds:
+      - $FVM_PREFIX flutter pub get
+
+  android-aab:
+    desc: Building Android AAB
+    deps: [get]
+    aliases: [aab]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Building Android AAB...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter build appbundle lib/main_youscribeDev.dart --flavor youscribeDev --no-pub --obfuscate --split-debug-info="./build/app/outputs/bundle/release/" {{ .CLI_ARGS }}
+      - open ./build/app/outputs/bundle/release/
+  
+  android-apk:
+    desc: Building Android APK
+    deps: [get]
+    aliases: [apk]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Building Android APK...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter build apk lib/main_youscribeDev.dart --flavor youscribeDev --no-pub {{ .CLI_ARGS }}
+
+  ios:
+    desc: Building iOS IPA
+    deps: [get]
+    aliases: [i]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Building iOS IPA...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter build ipa lib/main_youscribeDev.dart --flavor youscribeDev --no-pub --obfuscate --split-debug-info="./build/ios/archive" {{ .CLI_ARGS }}
+      - find "./build/ios/archive" -name "*.xcarchive" -exec open {} \;

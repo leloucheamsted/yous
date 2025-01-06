@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>mailto</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>en</string>
+		<string>ar</string>
+		<string>fr</string>
+	</array>
+	<key>MinimumOSVersion</key>
+	<string>9.0</string>
+	<key>CFBundleDisplayName</key>
+	<string>YouScribe</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.youscribe.youscribe.app</string>
+	<key>CFBundleVersion</key>
+	<string>5.6.5</string>
+	<key>UILaunchStoryboardName</key>
+	<string>${LAUNCH_SCREEN}</string>
+	<key>CFBundleName</key>
+	<string>YouScribe</string>
+	<key>XSAppIconAssets</key>
+	<string>Assets.xcassets/AppIcon.appiconset</string>
+	
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>processing</string>
+		<string>audio</string>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+       <array>
+       <string>unzip</string>
+	    <string>setupBackgroundActions</string>
+		<string>syncBookLists</string>
+       </array>
+	<key>FacebookAppID</key>
+	<string>185333694813498</string>
+	<key>FacebookDisplayName</key>
+	<string>YouScribe</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb185333694813498</string>
+			</array>
+		</dict>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>CFBundleShortVersionString</key>
+	<string>5.6.5</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>This will allow you to use the image from your camera.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This will allow you to add images to your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This will allow you to create signatures and annotations from images in your photo library.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This will allow us to detect if an Apple Pencil is paired, enabling palm rejection and the ability to scroll with one finger while annotating.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This will allow us detect if an Apple Pencil is paired, enabling palm rejection and the ability to scroll with one finger while annotating.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This will allow us to detect audio with our PDF reader.</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This app needs camera access to scan QR codes</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+</dict>
+</plist>

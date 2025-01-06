@@ -1,0 +1,54 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "youscribe (dev mode)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_youscribeDev.dart",
+            "args": [
+                "--flavor",
+                "youscribeDev"
+                //NOTE: The app is faster with the release flag. "--release"
+            ]
+        },
+        {
+            "name": "youscribe (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_youscribeDev.dart",
+            "args": [
+                "--flavor",
+                "youscribeDev",
+                "--release"
+                //NOTE: The app is faster with the release flag. "--release"
+            ]
+        },
+        {
+            "name": "maktabati (dev mode)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main_maktabatiDev.dart",
+            "args": [
+                "--flavor",
+                "maktabatiDev"
+            ]
+        },
+        //Profile mode
+        {
+            "name": "youscribe (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "youscribe (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

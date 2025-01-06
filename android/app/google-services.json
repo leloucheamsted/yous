@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491835243808",
+    "firebase_url": "https://youscribe-30b20.firebaseio.com",
+    "project_id": "youscribe-30b20",
+    "storage_bucket": "youscribe-30b20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491835243808:android:74631edeb95a915d77ab45",
+        "android_client_info": {
+          "package_name": "youscribe.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491835243808-cbl5oauj16vvb6su4r982m3re30og4v2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP4df2rzTUmwmi3Fryq1BHQfXM5n7xP4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491835243808-cbl5oauj16vvb6su4r982m3re30og4v2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "491835243808-0vtd2k2rsqja3hg859psqmt6u8623gij.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.youscribe.youscribe.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,19 @@
+name: youscribe_logger
+description: Common - Logger for Youscribe projects
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  my_logger: ^1.0.2
+  sentry_flutter: ^7.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  youscribe_linter:
+    path: ../youscribe_linter

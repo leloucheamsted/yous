@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: youscribe_linter
+dependency_overrides:
+  youscribe_linter:
+    path: ../youscribe_linter

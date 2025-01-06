@@ -1,0 +1,1 @@
+enum AppStates { paused, active }

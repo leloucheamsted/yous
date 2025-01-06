@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+  <domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">127.0.0.1</domain>
+    <domain includeSubdomains="true">192.168.101.24</domain>
+    <domain includeSubdomains="true">192.168.1.161</domain>
+    <domain includeSubdomains="true">localhost</domain>
+    <domain includeSubdomains="true">mobile-dev.youscribe.com</domain>
+    <domain includeSubdomains="true">services.youscribe.com</domain>
+    <domain includeSubdomains="true">api-mobile.youscribe.com</domain>
+    <domain includeSubdomains="true">api-streaming.youscribe.com</domain>
+    <domain includeSubdomains="true">cms.uscri.be</domain>
+  </domain-config>
+
+  <!--<base-config cleartextTrafficPermitted="true">
+    <trust-anchors>
+      <certificates src="system" />
+    </trust-anchors>
+  </base-config>-->
+</network-security-config>

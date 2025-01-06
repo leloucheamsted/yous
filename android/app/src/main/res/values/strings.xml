@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="facebook_app_id">1542475553253332</string>
+<string name="fb_login_protocol_scheme">fb1542475553253332</string>
+<string name="facebook_client_token">ecf2668505ba770f5e761e31dba0a9fa</string>
+<string name="main_notification_chanel_id">YouscribeChannel#449</string>
+<string name="main_notification_chanel_name">YouscribeMainNotificationChannel</string>
+</resources>

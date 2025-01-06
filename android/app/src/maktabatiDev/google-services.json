@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "627309150060",
+    "project_id": "maktabati-973c7",
+    "storage_bucket": "maktabati-973c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627309150060:android:d21d868b9cb3ba2220bd49",
+        "android_client_info": {
+          "package_name": "ma.maktabati.mobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627309150060-iii0flslmdaa2kf5hdf7m19o6bt347m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Ap0Lnz-8GHtFlqFNpFzzdDrRvJ6rj2c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627309150060-iii0flslmdaa2kf5hdf7m19o6bt347m1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "627309150060-avdlrjsnqrq3h9i6rk248mj0bs4pb2tt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ma.mtkids.iam"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

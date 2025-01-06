@@ -1,0 +1,13 @@
+name: youscribe_linter
+description: Common - Linter rules for Youscribe projects
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+
+dependencies:
+  wyatt_analysis:
+    version: ^2.6.1
+    hosted:
+      name: wyatt_analysis
+      url: https://git.wyatt-studio.fr/api/packages/Wyatt-FOSS/pub/

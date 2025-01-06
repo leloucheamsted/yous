@@ -1,0 +1,24 @@
+name: youscribe_analytics
+description: Common - Analytics for YouScribe
+version: 0.0.1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.21.0
+  firebase_analytics: ^10.6.3
+
+  youscribe_logger:
+    path: ../youscribe_logger
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  youscribe_linter:
+    path: ../youscribe_linter

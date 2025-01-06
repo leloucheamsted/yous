@@ -1,0 +1,33 @@
+version: 3
+
+vars:
+  RED: '\033[0;31m'
+  GREEN: '\033[0;32m'
+  COLOROFF: '\033[0m'
+  PREFIX: "⏳"
+
+silent: true
+
+tasks:
+  logs:
+    desc: Show log output for running Flutter apps
+    aliases: [l]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Showing log output for running Flutter apps...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter logs
+
+  youscribe:
+    desc: Run app with YouScribe flavor
+    aliases: [ys]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Running the app (youscribeDev)...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter run --flavor youscribeDev --target lib/main_youscribeDev.dart {{ .CLI_ARGS }}
+
+  maktabati:
+    desc: Run app with Maktabati flavor
+    aliases: [ys]
+    cmds:
+      - echo -e "{{ .GREEN }}{{ .PREFIX }} Running the app (maktabatiDev)...{{ .COLOROFF }}"
+      - $FVM_PREFIX flutter run --flavor maktabatiDev --target lib/main_maktabatiDev.dart {{ .CLI_ARGS }}
+
+  

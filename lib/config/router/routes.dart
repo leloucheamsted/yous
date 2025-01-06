@@ -1,0 +1,50 @@
+class Routes {
+  static const String home = 'home';
+  static const String welcome = 'welcome';
+  static const String appLoading = 'loading';
+  static const String search = 'search';
+  static const String signIn = 'sign-in';
+  static const String signUp = 'sign-up';
+  static const String audioPlayer = 'audioPlayer';
+  static const String epubReader = 'epubReader';
+  static const String forgotPassword = 'forgot-password';
+  static const String myLastReads = 'last-read';
+  static const String myOfflines = 'offlines';
+  static const String myLists = 'myLists';
+  static const String myFavorites = 'favorites';
+  static const String account = 'account';
+  static const String library = 'library';
+  static const String classification = 'classification';
+  static const String productDetails = 'product_details';
+  static const String productsInYsSelection = 'products_in_selection';
+  static const String collectionDetails = 'collection_details';
+  static const String authorPage = 'author_products';
+  static const String publisherProducts = 'publisher_details';
+  static const String help = 'help';
+  static const String myTokens = 'myTookens';
+  static const String notifications = 'notifications';
+  static const String searchResults = 'search_results';
+  static const String recommandations = 'recommandations';
+  static const String suggestions = 'suggestions';
+  static const String personnalLegalNotices = 'personnalLegalNotices';
+  //PARAM Names
+  static const String productIdParamName = 'productId';
+  static const String productPasswordParamName = 'productPassword';
+  static const String pathParamName = 'path';
+  static const String authorIdParamName = 'authorId';
+  static const String publisherIdParamName = 'publisherId';
+  static const String productAccessTypeParamName = 'productAccessType';
+  static const String authorTitleParamName = 'authorName';
+  static const String publisherTitleParamName = 'publisherName';
+  static const String collectionIdParamName = 'collectionId';
+  static const String collectionTitleParamName = 'collectionTitle';
+  static const String selectionDetails = 'selection_details';
+  static const String selectionIdParamName = 'selectionId';
+  static const String ysSelectionIdParamName = 'ysSelectionId';
+  static const String selectionTitleParamName = 'selectionTitle';
+  static const String fontIconParamName = 'fontIcon';
+  static const String isYsClassfificationParamName = 'isYsClassfification';
+  static const String contentLegalParamName = 'contentLegal';
+
+  static const String notificationOptionParamName = 'notificationOption';
+}

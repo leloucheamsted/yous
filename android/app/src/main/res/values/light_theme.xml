@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~   Copyright © 2018-2023 PSPDFKit GmbH. All rights reserved.
+  ~
+  ~   THIS SOURCE CODE AND ANY ACCOMPANYING DOCUMENTATION ARE PROTECTED BY INTERNATIONAL COPYRIGHT LAW
+  ~   AND MAY NOT BE RESOLD OR REDISTRIBUTED. USAGE IS BOUND TO THE PSPDFKIT LICENSE AGREEMENT.
+  ~   UNAUTHORIZED REPRODUCTION OR DISTRIBUTION IS SUBJECT TO CIVIL AND CRIMINAL PENALTIES.
+  ~   This notice may not be removed from this file.
+  -->
+
+<resources>
+    <style name="PSPDFKit.Theme.Custom.Light" parent="PSPDFKit.Theme.Default">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/status_bar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:listDivider">@android:drawable/divider_horizontal_dark</item>
+
+        <item name="pspdf__navigationHistoryIconColor">@color/icons_orange</item>
+
+        <item name="pspdf__actionBarIconsStyle">@style/FlutterExample.ActionBarIcons.Light</item>
+        <item name="pspdf__contextualToolbarStyle">@style/FlutterExample.ContextualToolbar.Light</item>
+        <item name="pspdf__inlineSearchStyle">@style/FlutterExample.SearchViewInline.Light</item>
+        <item name="pspdf__inputFieldTextAppearance">@style/FlutterExample.SeachViewInline.InputFieldTextAppearance.Light</item>
+        <item name="pspdf__outlineViewStyle">@style/FlutterExample.OutlineView.Light</item>
+
+    </style>
+
+    <style name="FlutterExample.ActionBarIcons.Light" parent="PSPDFKit.ActionBarIcons">
+        <item name="pspdf__iconsColor">@color/icons_orange</item>
+        <item name="pspdf__iconsColorActivated">@color/icons_orange</item>
+    </style>
+   
+    <style name="FlutterExample.ContextualToolbar.Light" parent="PSPDFKit.ContextualToolbar">
+        <item name="pspdf__iconsColor">@color/icons_orange</item>
+        <item name="pspdf__iconsColorActivated">@color/icons_orange</item>
+        <item name="pspdf__backgroundColor">@color/color_primary</item>
+    </style>
+
+    <style name="FlutterExample.SearchViewInline.Light" parent="PSPDFKit.SearchViewInline">
+        <item name="pspdf__borderWidth">1dp</item>
+        <item name="pspdf__throbberColor">@color/icons_orange</item>
+        <item name="pspdf__prevIconColorTint">@color/icons_orange</item>
+        <item name="pspdf__nextIconColorTint">@color/icons_orange</item>
+        <item name="pspdf__backIconColorTint">@color/icons_orange</item>
+        <item name="pspdf__resultTextAppearance">@style/FlutterExample.SearchViewInline.ResultTextAppearance.Light</item>
+    </style>
+
+    <style name="FlutterExample.SeachViewInline.InputFieldTextAppearance.Light" parent="PSPDFKit.SearchViewInline.InputFieldTextAppearance">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="FlutterExample.SearchViewInline.ResultTextAppearance.Light" parent="PSPDFKit.SearchViewInline.ResultTextAppearance">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FlutterExample.OutlineView.Light" parent="PSPDFKit.OutlineView">
+        <item name="pspdf__bookmarksBarIconColor">@color/icons_orange</item>
+    </style>
+</resources>

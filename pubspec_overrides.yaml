@@ -1,0 +1,9 @@
+# melos_managed_dependency_overrides: youscribe_linter,youscribe_logger,youscribe_analytics
+dependency_overrides:
+  intl: ^0.18.0
+  youscribe_analytics:
+    path: packages/youscribe_analytics
+  youscribe_linter:
+    path: packages/youscribe_linter
+  youscribe_logger:
+    path: packages/youscribe_logger

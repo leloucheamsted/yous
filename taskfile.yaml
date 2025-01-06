@@ -1,0 +1,60 @@
+version: 3
+
+vars:
+  RED: '\033[0;31m'
+  GREEN: '\033[0;32m'
+  COLOROFF: '\033[0m'
+  PREFIX: "⏳"
+
+includes:
+  run: ./automation/run.yml
+  build: ./automation/build.yml
+
+dotenv: ['.env']
+
+silent: true
+
+tasks:
+  help:
+    desc: Help dialog.
+    aliases: [h, default]
+    cmds:
+      - task --summary --list-all
+
+  encrypt-android-keys:
+    desc: Encrypt Android keys
+    aliases: [eak]
+    cmds:
+      - cd android && jar cfvM android_keys.zip android_keys
+      - source '.env' && gpg --quiet --batch --yes --symmetric --passphrase=$ANDROID_KEYS_SECRET_PASSPHRASE --output android/android_keys.zip.gpg android/android_keys.zip
+      - rm -rf android/android_keys
+      - rm android/android_keys.zip
+
+  decrypt-android-keys:
+    desc: Decrypt Android keys
+    aliases: [dak]
+    cmds:
+      - source '.env' && gpg --quiet --batch --yes --decrypt --passphrase=$ANDROID_KEYS_SECRET_PASSPHRASE --output android/android_keys.zip android/android_keys.zip.gpg
+      - cd android && jar xvf android_keys.zip
+      - mv android/android_keys/* android/
+      - rm -rf android/android_keys
+      - rm android/android_keys.zip
+  
+  encrypt-ios-keys:
+    desc: Encrypt iOS keys
+    aliases: [eik]
+    cmds:
+      - cd ios && jar cfvM ios_keys.zip ios_keys
+      - source '.env' && gpg --quiet --batch --yes --symmetric --passphrase=$IOS_KEYS_SECRET_PASSPHRASE --output ios/ios_keys.zip.gpg ios/ios_keys.zip
+      - rm -rf ios/ios_keys
+      - rm ios/ios_keys.zip
+
+  decrypt-ios-keys:
+    desc: Decrypt iOS keys
+    aliases: [dik]
+    cmds:
+      - source '.env' && gpg --quiet --batch --yes --decrypt --passphrase=$IOS_KEYS_SECRET_PASSPHRASE --output ios/ios_keys.zip ios/ios_keys.zip.gpg
+      - cd ios && jar xvf ios_keys.zip
+      - mv ios/ios_keys/* ios/
+      - rm -rf ios/ios_keys
+      - rm ios/ios_keys.zip

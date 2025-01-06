@@ -1,0 +1,47 @@
+include: package:wyatt_analysis/analysis_options.flutter.yaml
+
+analyzer:
+  plugins:
+    - dart_code_linter
+  exclude:
+    - lib/**/*.g.dart
+    - lib/**/*.freezed.dart
+    - lib/firebase_options.dart
+    - packages/iridium/**
+  errors:
+    prefer_const_constructors: error
+
+linter:
+  rules:
+    overridden_fields: false
+    prefer_single_quotes: false
+    avoid_positional_boolean_parameters: false
+    require_trailing_commas: false
+    prefer_expression_function_bodies: false
+    flutter_style_todos: false
+    depend_on_referenced_packages: false
+    no_default_cases: false
+    eol_at_end_of_file: false
+
+dart_code_linter:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  metrics:
+    cyclomatic-complexity: 20
+    maximum-nesting-level: 5
+    number-of-parameters: 10
+    source-lines-of-code: 400
+  metrics-exclude:
+    - test/**
+  rules:
+    - newline-before-return
+    - no-boolean-literal-compare
+    - no-empty-block
+    - prefer-trailing-comma
+    - prefer-conditional-expressions
+    - no-equal-then-else
+    - avoid-border-all
+    - prefer-const-border-radius
+    - prefer-using-list-view
+

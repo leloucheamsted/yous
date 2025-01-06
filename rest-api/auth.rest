@@ -1,0 +1,91 @@
+### Auth
+
+@mobileApi=https://api-mobile.youscribe.com
+@mainApi=https://services.youscribe.com
+@userName=maloleon09
+@password=toto1234
+@YsAuthToken=AFFE48B98988464E9626E2CE0F0C639BDC5A232C0D778167E54EDAAE7826BB99F7D75FFA8C028B6D8CABDD4EF814F8C599F2274F15681B1D9D8CF44F37EDEF0604D8E8F6C1863594B6BD242D536625A69B2404E2352C041ADD8C168AE3D2E16B906779E0AA1AF203FB0E80150BB8C4FBC9C81151DA7FEC23C02750EDF4F8573C0890CC7DA0F5295CD158702BBA71566E
+
+### Login
+GET {{mobileApi}}/v1/accounts/login?userName={{userName}}&password={{password}}
+User-Agent: YouScribe.MobileApp/3.2.0
+
+# {
+#   "UserName": "maloleon09",
+#   "Id": 16781956,
+#   "Email": "leonmalo@sfr.fr",
+#   "ImageUrl": "https://www.gravatar.com/avatar/120411ade6e3ed0f6addb49851deb77c?s=150&d=http%3a%2f%2fwww.youscribe.com%2fContent%2fimgv3%2fdefault%2fdefault_user.png",
+#   "Token": "AFFE48B98988464E9626E2CE0F0C639BDC5A232C0D778167E54EDAAE7826BB99F7D75FFA8C028B6D8CABDD4EF814F8C599F2274F15681B1D9D8CF44F37EDEF0604D8E8F6C1863594B6BD242D536625A69B2404E2352C041ADD8C168AE3D2E16B906779E0AA1AF203FB0E80150BB8C4FBC9C81151DA7FEC23C02750EDF4F8573C0890CC7DA0F5295CD158702BBA71566E",
+#   "YsAuthToken": "AFFE48B98988464E9626E2CE0F0C639BDC5A232C0D778167E54EDAAE7826BB99F7D75FFA8C028B6D8CABDD4EF814F8C599F2274F15681B1D9D8CF44F37EDEF0604D8E8F6C1863594B6BD242D536625A69B2404E2352C041ADD8C168AE3D2E16B906779E0AA1AF203FB0E80150BB8C4FBC9C81151DA7FEC23C02750EDF4F8573C0890CC7DA0F5295CD158702BBA71566E",
+#   "TrackingId": "49398fd5-1f1a-43b5-8de3-271586ae8c34",
+#   "IsSubscriber": false,
+#   "Cobranding": "",
+#   "AdditionnalRightRequired": false,
+#   "AdditionnalRightExpiration": null,
+#   "AvatarUrls": [
+#     {
+#       "Url": "https://www.gravatar.com/avatar/120411ade6e3ed0f6addb49851deb77c?s=150&d=http%3a%2f%2fwww.youscribe.com%2fContent%2fimgv3%2fdefault%2fdefault_user_l.png",
+#       "Width": 250,
+#       "Height": 250,
+#       "Type": 0
+#     },
+#     {
+#       "Url": "https://www.gravatar.com/avatar/120411ade6e3ed0f6addb49851deb77c?s=150&d=http%3a%2f%2fwww.youscribe.com%2fContent%2fimgv3%2fdefault%2fdefault_user.png",
+#       "Width": 150,
+#       "Height": 150,
+#       "Type": 0
+#     },
+#     {
+#       "Url": "https://www.gravatar.com/avatar/120411ade6e3ed0f6addb49851deb77c?s=150&d=http%3a%2f%2fwww.youscribe.com%2fContent%2fimgv3%2fdefault%2fdefault_user.png",
+#       "Width": 75,
+#       "Height": 75,
+#       "Type": 0
+#     }
+#   ]
+# }
+
+### SignUp
+POST {{mobileApi}}/v1/accounts?countryCode=fr&createSubscription=false&code=null
+User-Agent: YouScribe.MobileApp/3.2.0
+Content-Type: application/json; charset=utf-8
+
+"hugo.pointcheval@wyatt-studio.fr"
+
+# {
+#   "UserName": "hugo.pointcheval",
+#   "Id": 16834046,
+#   "Email": "hugo.pointcheval@wyatt-studio.fr",
+#   "ImageUrl": null,
+#   "Token": "1DBB093D45CEBD8C2A6460612C968D5DFE01E6B0F04B2D5CE808553BD9654CF5255BD893CFBDC18FB8C1DBF1D498D2BF8DB4438A0BA50C862EAE7A8CB823C375EE6D7F1652C03F6DF8FD946C7BDBF9B93F194A14AA6E3649AA39FADF68C2EDFE40DB8FCB07780B39877056B522571C6AC6E9221C6A7F8FFA8C239A18C9C23848A154927D2ABB7D61AC07ACB580580F93D83324A6E1EF163C2CECDC6A38A0A5E9",
+#   "YsAuthToken": "1DBB093D45CEBD8C2A6460612C968D5DFE01E6B0F04B2D5CE808553BD9654CF5255BD893CFBDC18FB8C1DBF1D498D2BF8DB4438A0BA50C862EAE7A8CB823C375EE6D7F1652C03F6DF8FD946C7BDBF9B93F194A14AA6E3649AA39FADF68C2EDFE40DB8FCB07780B39877056B522571C6AC6E9221C6A7F8FFA8C239A18C9C23848A154927D2ABB7D61AC07ACB580580F93D83324A6E1EF163C2CECDC6A38A0A5E9",
+#   "TrackingId": "ae92548a-8d6c-4250-87ca-2725104d316a",
+#   "IsSubscriber": false,
+#   "Cobranding": "",
+#   "AdditionnalRightRequired": false,
+#   "AdditionnalRightExpiration": null,
+#   "AvatarUrls": []
+# }
+
+### Authorize
+GET {{mainApi}}/api/v1/authorize
+YS-AUTH: {{YsAuthToken}}
+
+### Get account
+GET {{mobileApi}}/v1/accounts
+YS-AUTH: {{YsAuthToken}}
+
+### 
+GET {{mobileApi}}/v1/subscriptions/current
+YS-AUTH: {{YsAuthToken}}
+
+### 
+POST {{mobileApi}}/v1/subscriptions/googleplay/subscribe
+YS-AUTH: {{YsAuthToken}}
+Content-Type: application/json; charset=utf-8
+
+{
+  "Platform": "Android",
+  "ProductId": "youscribe.mobileapp.sub.week",
+  "PurchaseId": "fake_purchase_id_123",
+  "PurchaseToken": "fake_purchase_token_ABC123"
+}

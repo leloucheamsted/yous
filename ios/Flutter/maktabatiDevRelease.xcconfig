@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_maktabatiDev.dart
+ASSET_PREFIX=maktabatiDev
+BUNDLE_NAME=Maktabati Dev
+BUNDLE_DISPLAY_NAME=Maktabati Dev
